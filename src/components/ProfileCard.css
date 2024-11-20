@@ -1,0 +1,153 @@
+/* General card styling */
+.profile-card {
+    width: 100%;
+    max-width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background: linear-gradient(135deg, #e9902c, #e97e27); /* Gradient background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  /* Profile image styling */
+  .profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #fff; /* White border around the image */
+    cursor: pointer; /* Make the image clickable */
+  }
+  
+  /* Name styling */
+  .profile-name {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #fff; /* White text */
+  }
+  
+  /* Title and skills styling */
+  .profile-title {
+    font-size: 1rem;
+    color: #f1f1f1; /* Light text color */
+    margin-bottom: 10px;
+  }
+  
+  /* Skills section Flexbox layout */
+  .profile-skills {
+    margin-top: 10px;
+  }
+  
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow skills to wrap onto the next line if necessary */
+    justify-content: center; /* Center-align the skills horizontally */
+    gap: 10px; /* Space between skills */
+    margin-top: 10px;
+  }
+  
+  /* Style individual skill items */
+  .skill {
+    background-color: #fff;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .skill:hover {
+    background-color: #8e24aa; /* Hover effect with color change */
+    color: #fff;
+  }
+  
+  /* Description styling */
+  .profile-description {
+    font-size: 0.9rem;
+    color: #e0e0e0; /* Lighter text */
+    margin-bottom: 20px;
+  }
+  
+  /* List styling for followers */
+  .followers ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .followers li {
+    font-size: 0.9rem;
+    color: #fff;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .followers i {
+    margin-right: 8px; /* Space between icon and text */
+    font-size: 1.2rem; /* Icon size */
+  }
+  
+  /* Button styling */
+  .follow-btn,
+  .contact-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .follow-btn {
+    background-color: #97c781;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .follow-btn:hover {
+    background-color: #5ad434;
+  }
+  
+  .contact-btn {
+    background-color: #97c781;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-btn:hover {
+    background-color: #5ad434;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    .profile-card {
+      max-width: 100%;
+    }
+    .profile-name {
+      font-size: 1.2rem;
+    }
+    .profile-title {
+      font-size: 0.9rem;
+    }
+    .profile-description {
+      font-size: 0.8rem;
+    }
+    .profile-container {
+        background-color: #518cc7; /* Change this to your desired color */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+      
+  }
+  
